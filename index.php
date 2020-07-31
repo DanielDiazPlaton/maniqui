@@ -8,4 +8,6 @@ echo $preview->createPreviewVideo(null);
 $containers = new CategoryContainers($con);
 echo $containers->showAllCategories();
 
+include_once("includes/footer.php");
+
 ?>

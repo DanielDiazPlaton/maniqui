@@ -45,7 +45,7 @@ class PreviewProvider {
 
                             <div class='buttons'>
 
-                                <button onclick='watchProduct($id)'><i class='fa fa-cart-arrow-down'></i> Comprar</button>
+                                <button onclick='watchProduct($id)'><i class='fa fa-cart-arrow-down'></i> Ver Producto</button>
                                 <!-- <button onclick='volumeToggle(this)'><i class='fas fa-volume-mute'></i></button> -->
 
                             </div>

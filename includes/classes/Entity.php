@@ -29,6 +29,14 @@ class Entity{
         return $this->sqlData["name"];
     } // fin de la funcion getName 
 
+    public function getDescription(){
+        return $this->sqlData["descripcion"];
+    } // end the function getDescription() 
+
+    public function getPrecio(){
+        return $this->sqlData["precio"];
+    } // fin de la funcion getName 
+
     public function getThumbnail(){
         return $this->sqlData["thumbnail"];
     } // fin de la funcion getThumbnail

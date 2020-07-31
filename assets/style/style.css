@@ -12,7 +12,7 @@ body {
 }
 
 h3 {
-    color: #1f1a1a;
+    color: #000;
 }
 
 a h3:hover {
@@ -124,4 +124,136 @@ button i {
     width: 100%;
     text-align: center;
     font-size: 18px;
+}
+
+.topBar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    height: 70px;
+    box-sizing: border-box;
+    min-width: 1050px;
+    transition: background-color 200ms linear;
+}
+
+.topBar.scrolled {
+    /* background-color: #dfcadb; */
+    background-color: #db90cd;
+    transition: background-color 200ms linear;
+}
+
+.logoContainer {
+    height: 40px;
+}
+
+.logoContainer img {
+    height: 100%;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks a {
+    color: #000;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.rightItems {
+    flex: 1;
+    text-align: right;
+}
+
+.rightItems i {
+    color: #000;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.foo {
+    background-color: #333;
+    height: 44px;
+}
+
+.foote {
+    margin-left: 620px;
+}
+
+.foot {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.foot i {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.product {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 150px;
+    border: 2px solid;
+    border-radius: 7px;
+}
+
+.productView {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+.productView img {
+    width: 100%;
+    height: 300px;
+}
+
+.precio {
+    font-size: 40px;
+}
+
+.buttonPay {
+    background-color: rgba(146, 48, 146, 0.4);
+    color: #fff;
+    border: none;
+    min-width: 150px;
+    padding: 0 38px;
+    height: 50px;
+    max-height: 50px;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.buttonPay:hover {
+    background-color: rgb(154, 17, 167);
+}
+
+.buttonAdd {
+    background-color: rgba(53, 38, 184, 0.4);
+    color: #fff;
+    border: none;
+    min-width: 150px;
+    padding: 0 38px;
+    height: 50px;
+    max-height: 50px;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.buttonAdd:hover {
+    background-color: rgba(20, 8, 124, 0.897);
 }

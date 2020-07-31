@@ -1,3 +1,8 @@
+$(document).scroll(function() {
+    var isScrolled = $(this).scrollTop() > $(".topBar").height();
+    $(".topBar").toggleClass("scrolled", isScrolled);
+})
+
 function previewEnded() {
 
     // alterna al onended del video
