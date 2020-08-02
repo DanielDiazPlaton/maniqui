@@ -10,7 +10,7 @@ $producto = new Producto($con, $_GET["id"]);
 
 ?>
 
-<div class="previewContainer">
+<div class="previewContainerDos">
     
     <div class="product">
         <div class="productView">

@@ -39,13 +39,22 @@ a {
     display: flex;
     width: 100%;
     height: 625px;
+    /* height: auto; */
+}
+
+.previewContainerDos {
+    position: relative;
+    display: flex;
+    width: 100%;
+    /* height: 625px; */
+    height: auto;
 }
 
 .previewContainer.small {
     width: 230px;
     height: 129px;
     margin-right: 4px;
-    display: inline-flex
+    display: inline-flex;
 }
 
 .previewContainer.small img {
@@ -200,8 +209,8 @@ button i {
     display: flex;
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 150px;
-    border: 2px solid;
+    margin-top: 100px;
+    border: 2px solid rgb(192, 53, 162);
     border-radius: 7px;
 }
 
@@ -209,11 +218,22 @@ button i {
     width: 100%;
     height: 100%;
     margin: 20px;
+    margin-top: 0;
 }
 
 .productView img {
     width: 100%;
     height: 300px;
+    margin-top: 20px;
+}
+
+.productView.productDescription {
+    border-left: 2px solid rgb(192, 53, 162);
+    padding: 20px;
+}
+
+.productView.productDescription h3 {
+    font-size: 15px;
 }
 
 .precio {
@@ -256,4 +276,40 @@ button i {
 
 .buttonAdd:hover {
     background-color: rgba(20, 8, 124, 0.897);
+}
+
+.episodeContainer {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 15px;
+    border: 1px solid rgb(192, 53, 162);
+    border-radius: 3px;
+}
+
+.episodeContainer .contents {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    position: relative;
+    background-color: rgb(190, 138, 179);
+}
+
+.episodeContainer img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.episodeContainer .videoInfo h4,
+.episodeContainer .videoInfo span {
+    color: #000;
+    width: 100%;
+    white-space: normal;
+}
+
+.episodeContainer .videoInfo {
+    margin-left: 6px;
+    max-height: 200px;
+    overflow-y: auto;
 }

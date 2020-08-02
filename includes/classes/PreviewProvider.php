@@ -62,11 +62,20 @@ class PreviewProvider {
         $id = $entity->getId();
         $thumbnail = $entity->getThumbnail();
         $name = $entity->getName();
+        $precio = $entity->getPrecio();
 
         return "<a href='producto.php?id=$id'>
-                    <div class='previewContainer small'>
-                        <img src='$thumbnail' title='$name'>
-                    </div> 
+                    <div class='episodeContainer'>
+                        <div class='contents'>
+
+                            <img src='$thumbnail' title='$name'>
+
+                            <div class='videoInfo'>
+                                <h3>$name</h3>
+                                <h4>$ $precio</h4>
+                            </div>
+                        </div>
+                    </div>
                 </a>";
     } // Fin de la funcion createEntityPreviewSquad 
 
